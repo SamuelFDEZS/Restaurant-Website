@@ -257,10 +257,41 @@ body {
   font-size: 4.5em;
   color: rgb(223, 161, 16);
 }
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .title__discover {
+    font-size: 3.5em;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .title__discover {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 575.98px) {
+  .title__discover {
+    font-size: 1.5em;
+  }
+}
 
 .title__name {
+  white-space: nowrap;
   font-family: "Rasa", serif;
   font-size: 6em;
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .title__name {
+    font-size: 5em;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .title__name {
+    font-size: 4em;
+  }
+}
+@media (max-width: 575.98px) {
+  .title__name {
+    font-size: 3em;
+  }
 }
 
 /*Separator*/
@@ -314,4 +345,10 @@ body {
   font-family: "Courier Prime", monospace;
   font-size: 1.1em;
   word-spacing: 3px;
+  white-space: nowrap;
+}
+@media (max-width: 575.98px) {
+  .title__text {
+    font-size: 0.7em;
+  }
 }/*# sourceMappingURL=main.css.map */
