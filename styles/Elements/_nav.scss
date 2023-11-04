@@ -2,6 +2,26 @@
     width: 60%;
     height: 100%;
     color: white;
+    transition: 0.5s;
+    @include breakpoint(xxs) {
+        width: 50%;
+        position: absolute;
+        z-index: 3;
+        top: 100%;
+        background-color: black;
+        border-radius: 10px;
+        border: 3px solid wheat;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+
+    &--visible{
+        opacity: 1;
+        visibility: visible;
+        height: 30vh;
+        
+    }
 }
 
 .menu__list {
@@ -13,6 +33,12 @@
     gap: 7%;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(xxs) {
+        text-align: center;
+        flex-direction: column;
+        
+    }
 
     @include breakpoint(xs) {
         gap: 6%;

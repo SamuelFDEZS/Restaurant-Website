@@ -141,11 +141,34 @@ table {
   background-color: black;
   justify-content: space-around;
 }
-@media (max-width: 575.98px) {
+@media ((min-width: 401px) and (max-width: 575.98px)) {
   .header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 400.98px) {
+  .header {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header__dropdown {
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 400.98px) {
+  .header__dropdown {
+    position: absolute;
+    bottom: 10%;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    font-size: 1.3em;
+    z-index: 4;
   }
 }
 .header__logo {
@@ -158,7 +181,14 @@ table {
   filter: invert(100%) hue-rotate(200deg);
   margin-left: 1%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 400.98px) {
+  .header__logo {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
   .header__logo {
     width: 30%;
   }
@@ -168,6 +198,26 @@ table {
   width: 60%;
   height: 100%;
   color: white;
+  transition: 0.5s;
+}
+@media (max-width: 400.98px) {
+  .header__menu {
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid wheat;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+.header__menu--visible {
+  opacity: 1;
+  visibility: visible;
+  height: 30vh;
 }
 
 .menu__list {
@@ -179,7 +229,13 @@ table {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 400.98px) {
+  .menu__list {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
   .menu__list {
     gap: 6%;
     font-size: 0.8em;
@@ -267,7 +323,12 @@ body {
     font-size: 2.5em;
   }
 }
-@media (max-width: 575.98px) {
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .title__discover {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 400.98px) {
   .title__discover {
     font-size: 1.5em;
   }
@@ -288,7 +349,12 @@ body {
     font-size: 4em;
   }
 }
-@media (max-width: 575.98px) {
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .title__name {
+    font-size: 3em;
+  }
+}
+@media (max-width: 400.98px) {
   .title__name {
     font-size: 3em;
   }
@@ -347,7 +413,12 @@ body {
   word-spacing: 3px;
   white-space: nowrap;
 }
-@media (max-width: 575.98px) {
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .title__text {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 400.98px) {
   .title__text {
     font-size: 0.7em;
   }

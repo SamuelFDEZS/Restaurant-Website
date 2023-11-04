@@ -50,6 +50,11 @@
 
     }
 
+    @include breakpoint(xxs) {
+        font-size: 1.5em;
+
+    }
+
     font-family: 'Great Vibes', cursive;
     font-size: 4.5em;
     color: rgb(223, 161, 16);
@@ -68,7 +73,9 @@
     @include breakpoint(xs) {
         font-size: 3em;
     }
-
+    @include breakpoint(xxs) {
+        font-size: 3em;
+    }
     white-space: nowrap;
     font-family: 'Rasa', serif;
     font-size: 6em;
@@ -133,6 +140,10 @@
     white-space: nowrap;
 
     @include breakpoint(xs) {
+        font-size: 0.7em;
+    }
+
+    @include breakpoint(xxs) {
         font-size: 0.7em;
     }
 }
