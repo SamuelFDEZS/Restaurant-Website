@@ -1,22 +1,17 @@
 let dropdown = document.querySelector(".header__dropdown")
+let sibling = dropdown.nextElementSibling
 
-dropdown.addEventListener("click", () => {
-    let sibling = dropdown.nextElementSibling
+window.addEventListener("resize", () => {
     if(sibling.classList.contains("header__menu--visible")){
         sibling.classList.remove('header__menu--visible')
-    } else {
-        sibling.classList.add('header__menu--visible')
     }
-    console.log(sibling)
 })
 
+dropdown.addEventListener("click", () => {
 
-const dropdownHandler = () => {
-    let sibling = dropdown.nextElementSibling
     if(sibling.classList.contains("header__menu--visible")){
         sibling.classList.remove('header__menu--visible')
     } else {
         sibling.classList.add('header__menu--visible')
     }
-}
-
+})
