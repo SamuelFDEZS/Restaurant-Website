@@ -1,0 +1,227 @@
+.concept {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__background {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://cdn1.vectorstock.com/i/1000x1000/44/35/background-with-plants-vector-20534435.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 120%;
+        background-position: center;
+        filter: opacity(20%) contrast(100%);
+    }
+
+    &__box {
+
+        @include breakpoint(lg) {
+            height: 90%;
+        }
+
+        @include breakpoint(md) {
+            width: 45%;
+            height: 90%;
+        }
+
+        @include breakpoint(sm) {
+            width: 55%;
+            height: 90%;
+            padding: 2% 5% 5% 5%;
+        }
+
+        @include breakpoint(xs) {
+            width: 65%;
+            height: 90%;
+            padding: 2% 5% 5% 5%;
+            gap: 5%;
+        }
+
+        @include breakpoint(xxs) {
+            width: 65%;
+            height: 90%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+
+        position: relative;
+        width: 35%;
+        height: 80%;
+        top: 0;
+        z-index: 2;
+        background-color: rgb(29, 29, 29);
+        color: white;
+        padding: 2% 4% 5% 4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10%;
+    }
+
+
+
+
+}
+
+.box__title {
+
+    @include breakpoint(md) {
+        height: 15%;
+    }
+
+    @include breakpoint(sm) {
+        height: 6%;
+    }
+    
+
+    font-size: 1.8em;
+    margin-top: 5%;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    position: relative;
+
+    &::before {
+
+        @include breakpoint(lg) {
+            width: 20%;
+            left: 5%;
+        }
+
+        @include breakpoint(md) {
+            width: 20%;
+        }
+
+        @include breakpoint(xs) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @include breakpoint(xxs) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @include breakpoint(sm){
+            width: 25%
+        }
+        content: "";
+        position: absolute;
+        width: 30%;
+        border: 1px solid white;
+        left: 0;
+        top: 50%;
+    }
+
+    &::after {
+
+        @include breakpoint(lg) {
+            width: 20%;
+            right: 5%;
+        }
+
+        @include breakpoint(md) {
+            width: 20%;
+        }
+
+        @include breakpoint(sm) {
+            width: 25%;
+        }
+
+        @include breakpoint(xs) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        @include breakpoint(xxs) {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        content: "";
+        position: absolute;
+        width: 30%;
+        border: 1px solid white;
+        right: 0;
+        top: 50%;
+    }
+}
+
+.box__text {
+    @include breakpoint(md) {
+        word-spacing: 5px;
+    }
+
+    @include breakpoint(sm){
+        word-spacing: 2px;
+        line-height: 1;
+    }
+
+    @include breakpoint(xs) {
+        word-spacing: 2px;
+    }
+
+    font-size: 1.08em;
+    word-spacing: 10px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.box__image1 {
+    @include breakpoint(md) {
+        top: -20%;
+        left: -45%;
+    }
+
+    @include breakpoint(sm) {
+        top: -20%;
+        left: -55%;
+    }
+
+    @include breakpoint(xs) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @include breakpoint(xxs) {
+        opacity: 0;
+        visibility: hidden;
+    }
+    position: absolute;
+    z-index: 3;
+    top: -15%;
+    left: -30%;
+    width: 50%;
+    height: 50%;
+    transform: rotate(70deg);
+    background-image: url("https://res.cloudinary.com/freshis/image/upload/v1642759820/Acelgas_21a40d12f0.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box__image2 {
+    @include breakpoint(xs) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @include breakpoint(xxs) {
+        opacity: 0;
+        visibility: hidden;
+    }
+    position: absolute;
+    z-index: 3;
+    top: -5%;
+    right: -30%;
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("https://pngimg.com/d/soup_PNG108.png");
+}
