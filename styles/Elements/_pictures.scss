@@ -1,0 +1,85 @@
+.pictures {
+
+    @include breakpoint(sm) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include breakpoint(xs) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    @include breakpoint(xxs) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 25% 23% 25%;
+    grid-template-rows: 32% 35% 32%;
+    justify-content: center;
+    row-gap: 2%;
+
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://images.adsttc.com/media/images/5e3c/5846/3312/fd25/4b00/007d/large_jpg/5a.jpg?1581013054");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        filter:saturate(70%) brightness(40%) contrast(120%);
+    }
+
+    &__picture {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        z-index: 3;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__picture--2 {
+        & img {
+            height: 120%;
+        }
+    }
+
+    &__picture--4 {
+        grid-row: 2 / span 2;
+
+        & img {
+            height: 80%;
+            object-fit: fill;
+        }
+    }
+
+    &__picture--5 {
+        grid-row: 2 / 3;
+    }
+
+    &__picture--6 {
+        grid-row: 2 / 4;
+
+        & img {
+            height: 80%;
+            object-fit: fill;
+        }
+    }
+
+    &__picture--7 {
+        grid-column: 2 / span 1;
+        height: 80%;
+    }
+}
