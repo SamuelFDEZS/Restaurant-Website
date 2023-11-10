@@ -488,8 +488,7 @@ body {
 @media ((min-width: 401px) and (max-width: 575.98px)) {
   .concept__box {
     width: 65%;
-    height: 90%;
-    padding: 2% 5% 5% 5%;
+    height: 80%;
     gap: 5%;
   }
 }
@@ -518,6 +517,11 @@ body {
 @media ((min-width: 576px) and (max-width: 767.98px)) {
   .box__title {
     height: 6%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .box__title {
+    height: 10%;
   }
 }
 .box__title::before {
@@ -598,6 +602,12 @@ body {
   word-spacing: 10px;
   line-height: 1.1;
   text-align: center;
+}
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .box__text {
+    word-spacing: 3px;
+    line-height: 1;
+  }
 }
 @media ((min-width: 768px) and (max-width: 991.98px)) {
   .box__text {

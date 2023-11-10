@@ -37,8 +37,7 @@
 
         @include breakpoint(xs) {
             width: 65%;
-            height: 90%;
-            padding: 2% 5% 5% 5%;
+            height: 80%;
             gap: 5%;
         }
 
@@ -71,6 +70,8 @@
 
 .box__title {
 
+
+    
     @include breakpoint(md) {
         height: 15%;
     }
@@ -79,6 +80,9 @@
         height: 6%;
     }
     
+    @include breakpoint(xs) {
+        height: 10%;
+    }
 
     font-size: 1.8em;
     margin-top: 5%;
@@ -154,6 +158,11 @@
 }
 
 .box__text {
+    @include breakpoint(lg) {
+        word-spacing: 3px;
+        line-height: 1;
+    }
+
     @include breakpoint(md) {
         word-spacing: 5px;
     }
@@ -166,6 +175,8 @@
     @include breakpoint(xs) {
         word-spacing: 2px;
     }
+
+    
 
     font-size: 1.08em;
     word-spacing: 10px;
