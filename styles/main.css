@@ -766,7 +766,7 @@ body {
 
 .menu {
   width: 100%;
-  height: 400vh;
+  height: 380vh;
   border: 3px solid black;
   display: flex;
   flex-direction: column;
@@ -848,39 +848,69 @@ body {
   border: 2px solid red;
   display: flex;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet {
+.menu__sliders .sliders__breakfast .breakfast__part2 {
+  width: 40%;
+  height: 100%;
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+.menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty {
+  width: 100%;
+  height: 60%;
+  margin-top: 21%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  border: 3px solid black;
+}
+.menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty .breakfast__title {
+  margin-top: 22%;
+}
+.menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty .breakfast__title--baguette {
+  margin-top: 5%;
+}
+.menu__sliders .sliders__breakfast .breakfast__part2 .part2__drinks {
+  width: 100%;
+  height: 40%;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  border: 3px solid black;
+}
+.menu__sliders .sliders__breakfast .breakfast__part2 .part2__drinks .menu__table tr {
+  height: 10px;
+}
+.menu .menu__box {
   width: 100%;
   height: 30%;
   margin-top: 15%;
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 1%;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet .sweet__title {
+.menu .menu__box .breakfast__title {
   width: 80%;
   margin-left: 10%;
-  height: 10%;
+  height: 5%;
   display: flex;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  margin-top: 10%;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet .sweet__table {
+.menu .menu__box .menu__table {
   width: 80%;
   height: 90%;
   margin-left: 10%;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet .sweet__table tr {
-  height: 30px;
+.menu .menu__box .menu__table tr {
+  height: 55px;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet .sweet__table td {
+.menu .menu__box .menu__table td {
   padding: 8px;
-  width: 50%;
+  width: 70%;
 }
-.menu__sliders .sliders__breakfast .breakfast__part1 .part1__sweet .sweet__table td:last-child {
+.menu .menu__box .menu__table td:last-child {
+  width: 30%;
   text-align: right;
-}
-.menu__sliders .sliders__breakfast .breakfast__part2 {
-  width: 40%;
-  height: 90%;
-  border: 2px solid blue;
-  display: flex;
 }/*# sourceMappingURL=main.css.map */
