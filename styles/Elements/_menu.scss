@@ -1,15 +1,13 @@
 .menu {
     width: 100%;
     height: 380vh;
-    border: 3px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3%;
-
+    gap: 1%;
     &__title {
         width: 100%;
-        height: 5%;
+        height: 2%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +36,7 @@
 
     &__meals {
         width: 50%;
-        height: 10%;
+        height: 5%;
         position: relative;
 
         & .meals__underline {
@@ -74,119 +72,198 @@
     &__sliders {
         width: 85%;
         height: 80%;
-        border: 3px solid black;
+        position: relative;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-image: url("../../assets/images/Menu\ background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         & .sliders__breakfast {
             width: 90%;
             height: 90%;
-            border: 2px solid blue;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 3%;
+            position: absolute;
+
 
             & .breakfast__part1 {
                 width: 40%;
                 height: 90%;
-                border: 2px solid red;
                 display: flex;
-
-                
-
-                
+                box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
+                padding: 0 10px 0 10px;
+                background-color: white;
             }
 
             & .breakfast__part2 {
                 width: 40%;
-                height: 100%;
-                border: 2px solid blue;
+                height: 95%;
+                margin-top: 8.5%;
                 display: flex;
                 flex-direction: column;
-                
-                & .part2__salty{
+                box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
+                padding: 0 10px 15px 10px;
+                background-color: white;
+
+                & .part2__salty {
                     width: 100%;
                     height: 60%;
                     margin-top: 21%;
                     display: flex;
                     flex-direction: column;
                     gap: 1%;
-                    border: 3px solid black;
 
-                    & .breakfast__title{
-                        margin-top: 22%;
-                        &--baguette{
+                    & .breakfast__title {
+                        margin-top: 5%;
+
+                        &--baguette {
                             margin-top: 5%;
                         }
                     }
-                    
+
                 }
 
-                & .part2__drinks{
+                & .part2__drinks {
                     width: 100%;
                     height: 40%;
-                    margin-top: 15%;
+                    margin-top: 5%;
                     display: flex;
                     flex-direction: column;
-                    gap: 1%;
-                    border: 3px solid black;
 
-                    & .menu__table{
-                        & tr{
+                    & .menu__table {
+                        & tr {
                             height: 10px;
-                        
+                        }
                     }
                 }
             }
+
         }
 
-    }
-}
+        & .sliders__lunch {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+            position: absolute;
+            left: 200%;
 
-.menu__box{
-    width: 100%;
-    height: 30%;
-    margin-top: 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 1%;
+            & .lunch__menu {
+                width: 60%;
+                height: 95%;
+                padding: 25px 10px 25px 10px;
+                background-color: white;
+                display: flex;
 
-    & .breakfast__title{
-        width: 80%;
-        margin-left: 10%;
-        height: 5%;
-        display: flex;
-        font-size: 1.4em;
-        margin-top: 10%;
 
-    }
-
-    & .menu__table{
-        width: 80%;
-        height: 90%;
-        margin-left: 10%;
-        
-        
-
-        & tr{
-            height: 55px;
-        }
-
-        & td {
-            padding: 8px;
-            width: 70%;
-            
-
-            &:last-child {
-                width: 30%;
-                text-align: right;
+                & .lunch__title {
+                    width: 100%;
+                    height: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0;
+                    margin-top: 0;
+                    font-size: 2.3rem;
+                }
             }
+
+
+        }
+
+        & .sliders__cocktails {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            position: absolute;
+            left: 200%;
+
+            & .cocktails__menu {
+                width: 80%;
+                height: 70%;
+                margin-top: 0;
+                display: flex;
+
+                & .cocktails__title {
+                    height: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+    }
+
+    .menu__box {
+        width: 100%;
+        height: 30%;
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+
+        & .slider__titles {
+            width: 80%;
+            margin-left: 10%;
+            height: 5%;
+            display: flex;
+            font-size: 1.4em;
+            margin-top: 10%;
         }
 
 
-    }
-    
+
+
+        & .menu__table {
+            width: 80%;
+            height: 90%;
+            margin-left: 10%;
+
+            & tr {
+                height: 55px;
+            }
+
+            &--baguette {
+                height: 10%;
+
+                & tr {
+                    height: 10px;
+                }
+            }
+
+            &--teas {
+                height: 10%;
+
+                & tr {
+                    height: 10px;
+                }
+
+
+                & td {
+                    padding: 8px;
+                    width: 70%;
+
+
+                    &:last-child {
+                        width: 30%;
+                        text-align: right;
+                    }
+                }
+            }
+
+        }
     }
 }

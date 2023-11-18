@@ -767,15 +767,14 @@ body {
 .menu {
   width: 100%;
   height: 380vh;
-  border: 3px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3%;
+  gap: 1%;
 }
 .menu__title {
   width: 100%;
-  height: 5%;
+  height: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -799,7 +798,7 @@ body {
 }
 .menu__meals {
   width: 50%;
-  height: 10%;
+  height: 5%;
   position: relative;
 }
 .menu__meals .meals__underline {
@@ -828,32 +827,42 @@ body {
 .menu__sliders {
   width: 85%;
   height: 80%;
-  border: 3px solid black;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../../assets/images/Menu background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .menu__sliders .sliders__breakfast {
   width: 90%;
   height: 90%;
-  border: 2px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3%;
+  position: absolute;
 }
 .menu__sliders .sliders__breakfast .breakfast__part1 {
   width: 40%;
   height: 90%;
-  border: 2px solid red;
   display: flex;
+  box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 10px 0 10px;
+  background-color: white;
 }
 .menu__sliders .sliders__breakfast .breakfast__part2 {
   width: 40%;
-  height: 100%;
-  border: 2px solid blue;
+  height: 95%;
+  margin-top: 8.5%;
   display: flex;
   flex-direction: column;
+  box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 10px 15px 10px;
+  background-color: white;
 }
 .menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty {
   width: 100%;
@@ -862,10 +871,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1%;
-  border: 3px solid black;
 }
 .menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty .breakfast__title {
-  margin-top: 22%;
+  margin-top: 5%;
 }
 .menu__sliders .sliders__breakfast .breakfast__part2 .part2__salty .breakfast__title--baguette {
   margin-top: 5%;
@@ -873,14 +881,61 @@ body {
 .menu__sliders .sliders__breakfast .breakfast__part2 .part2__drinks {
   width: 100%;
   height: 40%;
-  margin-top: 15%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
-  gap: 1%;
-  border: 3px solid black;
 }
 .menu__sliders .sliders__breakfast .breakfast__part2 .part2__drinks .menu__table tr {
   height: 10px;
+}
+.menu__sliders .sliders__lunch {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  position: absolute;
+  left: 200%;
+}
+.menu__sliders .sliders__lunch .lunch__menu {
+  width: 60%;
+  height: 95%;
+  padding: 25px 10px 25px 10px;
+  background-color: white;
+  display: flex;
+}
+.menu__sliders .sliders__lunch .lunch__menu .lunch__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-top: 0;
+  font-size: 2.3rem;
+}
+.menu__sliders .sliders__cocktails {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  left: 200%;
+}
+.menu__sliders .sliders__cocktails .cocktails__menu {
+  width: 80%;
+  height: 70%;
+  margin-top: 0;
+  display: flex;
+}
+.menu__sliders .sliders__cocktails .cocktails__menu .cocktails__title {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .menu .menu__box {
   width: 100%;
@@ -890,7 +945,7 @@ body {
   flex-direction: column;
   gap: 1%;
 }
-.menu .menu__box .breakfast__title {
+.menu .menu__box .slider__titles {
   width: 80%;
   margin-left: 10%;
   height: 5%;
@@ -906,11 +961,23 @@ body {
 .menu .menu__box .menu__table tr {
   height: 55px;
 }
-.menu .menu__box .menu__table td {
+.menu .menu__box .menu__table--baguette {
+  height: 10%;
+}
+.menu .menu__box .menu__table--baguette tr {
+  height: 10px;
+}
+.menu .menu__box .menu__table--teas {
+  height: 10%;
+}
+.menu .menu__box .menu__table--teas tr {
+  height: 10px;
+}
+.menu .menu__box .menu__table--teas td {
   padding: 8px;
   width: 70%;
 }
-.menu .menu__box .menu__table td:last-child {
+.menu .menu__box .menu__table--teas td:last-child {
   width: 30%;
   text-align: right;
 }/*# sourceMappingURL=main.css.map */
