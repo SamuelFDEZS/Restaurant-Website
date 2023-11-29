@@ -916,7 +916,7 @@ body {
   font-size: 2.3rem;
 }
 .menu__sliders .sliders__cocktails {
-  width: 70%;
+  width: 40%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -980,4 +980,376 @@ body {
 .menu .menu__box .menu__table--teas td:last-child {
   width: 30%;
   text-align: right;
+}
+
+.reservations {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.reservations__box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.reservations__box .box__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("https://www.table28lr.com/wp-content/uploads/2021/08/DSC05590.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(45%) contrast(120%);
+}
+.reservations__box .box__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.reservations__box .box__title::before {
+  content: "";
+  left: 20%;
+  width: 20%;
+  border: 1px solid rgb(187, 143, 10);
+}
+.reservations__box .box__title::after {
+  content: "";
+  right: 20%;
+  width: 20%;
+  border: 1px solid rgb(187, 143, 10);
+}
+.reservations__box .box__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+.reservations__box .box__container .container__form {
+  position: relative;
+  z-index: 3;
+  width: 65%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reservations__box .box__container .container__form .form__container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reservations__box .box__container .container__form .form__container .container__people {
+  width: 35%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  margin-top: 5%;
+}
+.reservations__box .box__container .container__form .form__container .container__people select {
+  width: 80%;
+  height: 32%;
+  padding: 1% 5% 1% 5%;
+  font-size: 1.1rem;
+  outline: none;
+  border: 0;
+  align-self: center;
+}
+.reservations__box .box__container .container__form .form__container .container__people select option {
+  font-size: 1rem;
+}
+.reservations__box .box__container .container__form .form__container .container__people label {
+  color: white;
+  font-weight: 700;
+  width: 80%;
+  align-self: center;
+}
+.reservations__box .box__container .container__form .form__container .container__time {
+  width: 35%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  margin-top: 5%;
+}
+.reservations__box .box__container .container__form .form__container .container__time select {
+  width: 80%;
+  height: 32%;
+  padding: 1% 5% 1% 5%;
+  font-size: 1.1rem;
+  outline: none;
+  border: 0;
+}
+.reservations__box .box__container .container__form .form__container .container__time select option {
+  font-size: 1rem;
+}
+.reservations__box .box__container .container__form .form__container .container__time label {
+  color: white;
+  font-weight: 700;
+  width: 80%;
+}
+.reservations__box .box__container .container__form .form__container .container__table {
+  width: 65%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.reservations__box .box__container .container__form .form__container .container__table select {
+  width: 92%;
+  height: 45%;
+  margin-left: 1%;
+  font-size: 1.1rem;
+  outline: none;
+  border: 0;
+}
+.reservations__box .box__container .container__form .form__container .container__table select option {
+  font-size: 1rem;
+}
+.reservations__box .box__container .container__form .form__container .container__table label {
+  color: white;
+  font-weight: 700;
+  width: 80%;
+}
+.reservations__box .box__container .container__form .form__container .container__reservation {
+  font-weight: 700;
+  color: rgb(157, 157, 157);
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+.reservations__box .box__container .container__form .form__container .container__reservation:hover {
+  color: black;
+}
+.reservations__box .box__container .container__form .form__button {
+  width: 60%;
+  height: 12%;
+  font-size: 1.1rem;
+  margin-right: 5%;
+  background-color: white;
+  outline: none;
+  border: 0;
+  transition: 0.2s;
+  margin-top: 5%;
+}
+.reservations__box .box__container .container__form .form__button:hover {
+  cursor: pointer;
+  background-color: rgb(187, 143, 10);
+  color: white;
+}
+.reservations__box .box__container .container__form .form__container--buttons {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 5%;
+  justify-content: center;
+}
+.reservations__box .box__container .container__form .form__container--buttons .form__button--waiter {
+  width: 76%;
+  height: 25%;
+  margin-top: 0;
+  margin-left: 9%;
+}
+.reservations__box .box__container .container__form .form__container--buttons .container__warning {
+  color: white;
+  font-weight: 600;
+  align-self: flex-start;
+  margin-left: 9%;
+}
+.reservations__box .box__container .container__form .form__container--buttons .form__button--request {
+  width: 76%;
+  height: 25%;
+  margin-top: 0;
+  margin-left: 9%;
+}
+.reservations__box .box__container .container__form .form__container--buttons .form__button--request:hover {
+  cursor: pointer;
+  background-color: rgb(187, 143, 10);
+  color: white;
+}
+.reservations__box .box__container .container__resInfo {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.reservations__box .box__container .container__resInfo .resInfo__title1 {
+  width: 100%;
+  height: 13%;
+  color: rgba(223, 161, 16, 0.774);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.reservations__box .box__container .container__resInfo .resInfo__title2 {
+  width: 100%;
+  height: 10%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  word-spacing: 10px;
+}
+.reservations__box .box__container .container__resInfo .resInfo__hline {
+  width: 20%;
+  height: 0;
+  border-top: 1px solid white;
+}
+.reservations__box .box__container .container__resInfo span {
+  color: white;
+  font-size: 1.05rem;
+  margin-top: 1%;
+}
+.reservations__box .box__container .container__resInfo span:first-of-type {
+  margin-top: 7%;
+}
+
+.blog {
+  width: 100%;
+  height: 95vh;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.blog__title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.blog__title::before {
+  content: "";
+  position: absolute;
+  left: 30%;
+  width: 15%;
+  border: 1px solid rgb(187, 143, 10);
+}
+.blog__title::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  width: 15%;
+  border: 1px solid rgb(187, 143, 10);
+}
+.blog a {
+  width: 20%;
+  height: 65%;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+}
+.blog a .link__article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.blog a .link__article .article__res-name {
+  width: 30%;
+  height: 5%;
+  border: 2px solid white;
+  color: white;
+  position: relative;
+  z-index: 2;
+  left: 3%;
+  top: 2%;
+  text-align: center;
+}
+.blog a .link__article .article__information {
+  width: 55%;
+  height: 55%;
+  color: white;
+  z-index: 2;
+  align-self: center;
+  margin-top: 15%;
+  margin-right: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.blog a .link__article .article__information .information__date {
+  color: rgb(199, 199, 199);
+}
+.blog a .link__article .article__information .information__title {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+}
+.blog a .link__article .article__information .information__description {
+  width: 90%;
+  color: rgba(255, 255, 255, 0.671);
+  font-size: 0.9rem;
+  margin-top: 4%;
+}
+.blog a .link__article .article__hline {
+  width: 100%;
+  margin-top: 25%;
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgb(186, 186, 186);
+}
+.blog a .first__article .article__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1c/c1/5d/34/terrace-marmara-sea-view.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(45%) contrast(120%);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog a .first__article .article__background .background__logo {
+  width: 50%;
+  height: 40%;
+  background-image: url("../../assets/images/mozza-bar-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 40%;
+}
+.blog__items {
+  width: 20%;
+  height: 6%;
+  outline: none;
+  border: 0;
+  background-color: rgb(152, 116, 9);
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  color: rgb(98, 96, 96);
+  cursor: pointer;
+  background: linear-gradient(to right, #dbb134, #bd8e0e);
+  background-size: 200% 100%;
+  transition: all 0.5s;
+}
+.blog__items:hover {
+  background-position: -200% 0;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

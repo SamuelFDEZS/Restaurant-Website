@@ -665,55 +665,83 @@
     </section>
     <!------------------Reservations--------------------->
     <section class="reservations">
-        <h2 class="reservations__title"></h2>
         <div class="reservations__box">
-            <form action="" class="box__form">
-                <select name="people" id="people" class="form__people">
-                    <option value="0">Select the amount of people</option>
-                    <option value="1">1 person</option>
-                    <option value="2">2 people</option>
-                    <option value="3">3 people</option>
-                    <option value="4">4 people</option>
-                    <option value="5">5 people</option>
-                </select>
+            <div class="box__background"></div>
+            <h2 class="box__title">Reservations</h2>
 
-                <select name="time" id="time" class="form__time">
-                    <option value="0">Select the time</option>
-                    <option value="1">7:30</option>
-                    <option value="2">9:00</option>
-                    <option value="3">11:00</option>
-                    <option value="4">13:30</option>
-                    <option value="5">15:00</option>
-                    <option value="6">17:00</option>
-                    <option value="7">19:00</option>
-                    <option value="8">21:00</option>
-                    <option value="9">22:30</option>
-                    <option value="10">00:00</option>
-                </select>
+            <div class="box__container">
+                <form action="" class="container__form">
 
-                <select name="table" id="table" class="form__table">
-                    <option value="0">Select your sit</option>
-                    <option value="1">Sofa</option>
-                    <option value="2">Chair</option>
-                    <option value="3">Rounded</option>
-                    <option value="4">Square</option>
-                </select>
+                    <div class="form__container">
+                        <div class="container__people">
 
-                <span class="form__warning"></span>
-                <button class="form__button form__button--waiter"></button>
+                            <label for="people" class="people__title">People</label>
 
-                <button class="form__button form__button--request"></button>
+                            <select name="people" class="people__select" required>
+                                <option value="1" selected>1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                            </select>
 
-            </form>
+                        </div>
 
-            <div class="box__resInfo">
-                <h3 class="resInfo__title1"></h3>
-                <h3 class="resInfo__title2"></h3>
+                        <div class="container__time">
+                            <label for="time" class="time__title">Time</label>
+                            <select name="time" class="time__select" required>
+                                <option value="1" selected>7:30</option>
+                                <option value="2">9:00</option>
+                                <option value="3">11:00</option>
+                                <option value="4">13:30</option>
+                                <option value="5">15:00</option>
+                                <option value="6">17:00</option>
+                                <option value="7">19:00</option>
+                                <option value="8">21:00</option>
+                                <option value="9">22:30</option>
+                                <option value="10">00:00</option>
+                            </select>
+                        </div>
 
-                <span class="resInfo__street"></span>
-                <span class="resInfo__postal"></span>
-                <span class="resInfo__opened"></span>
-                <span class="resInfo__schedule"></span>
+                        <div class="container__table">
+                            <label for="table" class="table__title">Table type</label>
+                            <select name="table" class="table__select">
+                                <option value="0">Select your sit</option>
+                                <option value="1">Sofa</option>
+                                <option value="2">Chair</option>
+                                <option value="3">Rounded</option>
+                                <option value="4">Square</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="container__reservation form__button ">Reserve</button>
+                    </div>
+
+                    <div class="form__container--buttons">
+                        <span class="container__warning">
+                            If you don't find any availability, sign into the waiting
+                            list
+                        </span>
+                        <button type="button" class="form__button form__button--waiter">Waiting list</button>
+
+
+
+                        <button type="button" class="form__button form__button--request">Group request</button>
+
+                    </div>
+
+                </form>
+
+                <div class="container__resInfo">
+                    <h1 class="resInfo__title1">MOZZABAR</h1>
+                    <h2 class="resInfo__title2">FOOD & DRINKS</h2>
+                    <div class="resInfo__hline"></div>
+
+                    <span class="resInfo__street">Conde de Peñalver 64</span>
+                    <span class="resInfo__postal">28006 - Madrid</span>
+                    <span class="resInfo__opened">We're opened monday to sunday </span>
+                    <span class="resInfo__schedule">from 07:30 to 01:30</span>
+                </div>
             </div>
         </div>
     </section>
@@ -721,36 +749,56 @@
 
     <!------------------Blog--------------------->
     <section class="blog">
-        <h2 class="blog__title"></h2>
+        <h2 class="blog__title">Blog</h2>
 
-        <article class="blog__article">
-            <h4 class="article__res-name"></h4>
-            <div class="article__information">
-                <span class="information__date"></span>
-                <h1 class="information__title"></h1>
-                <p class="information__description"></p>
-            </div>
-        </article>
+        <a href="#" class="blog__link">
+            <article class="link__article first__article">
+                <div class="article__background">
+                    <div class="background__logo"></div>
+                </div>
+                <h4 class="article__res-name">MOZZA BAR</h4>
+                <div class="article__information">
+                    <span class="information__date">03/06/2023</span>
+                    <h1 class="information__title">MOZZA BAR OPENS A NEW SUMMER TERRACE IN BOMBAY LOUNGE</h1>
+                    <p class="information__description">This friday Mozza Bar brands a new terrace in    Bombay Lounge &lpar;Enclosure...</p>
+                </div>
 
-        <article class="blog__article">
-            <h4 class="article__res-name"></h4>
-            <div class="article__information">
-                <span class="information__date"></span>
-                <h1 class="information__title"></h1>
-                <p class="information__description"></p>
-            </div>
-        </article>
+                <div class="article__hline"></div>
 
-        <article class="blog__article">
-            <h4 class="article__res-name"></h4>
-            <div class="article__information">
-                <span class="information__date"></span>
-                <h1 class="information__title"></h1>
-                <p class="information__description"></p>
-            </div>
-        </article>
+                <div class="article__icons">
+                    <span class="icons__admin">admin</span>
+                    <span class="icons__comments">0</span>
+                    <span class="icons__likes">1</span>
+                </div>
 
-        <button class="blog__items"></button>
+            </article>
+        </a>
+
+        <a href="#" class="blog__link">
+            <article class="link__article">
+                <div class="article__background"></div>
+                <h4 class="article__res-name"></h4>
+                <div class="article__information">
+                    <span class="information__date"></span>
+                    <h1 class="information__title"></h1>
+                    <p class="information__description"></p>
+                </div>
+            </article>
+        </a>
+
+        <a href="#" class="blog__link">
+            <article class="link__article">
+                <div class="article__background"></div>
+                <h4 class="article__res-name"></h4>
+                <div class="article__information">
+                    <span class="information__date"></span>
+                    <h1 class="information__title"></h1>
+                    <p class="information__description"></p>
+                </div>
+            </article>
+        </a>
+
+        <button class="blog__items">See all posts</button>
     </section>
 
 
