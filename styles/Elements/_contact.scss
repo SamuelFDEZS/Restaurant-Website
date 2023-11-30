@@ -1,0 +1,96 @@
+.contact {
+    width: 100%;
+    height: 50vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 12%;
+    margin-top: 5%;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-image: url("https://justdoughit.com/wp-content/uploads/VANILLA-CAKE-SLICE-314-scaled.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(30%) contrast(120%);
+    }
+
+    &__logo {
+        width: 10%;
+        height: 20%;
+        background-image: url("https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(100%) hue-rotate(200deg);
+        position: relative;
+        z-index: 2;
+    }
+
+    &__text {
+        width: 100%;
+        height: 20%;
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        text-shadow: 0 0 1rem black;
+    }
+
+    &__box {
+        width: 100%;
+        height: 30%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+
+
+        & article {
+            width: 14%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5%;
+
+            & .fa-map {
+                font-size: 2.3rem;
+
+            }
+
+            & .fa-mobile-screen{
+                font-size: 2.3rem;
+            }
+
+            & .fa-envelope {
+                font-size: 2.3rem;
+            }
+
+            & span.location__street, & span.location__postal, & span.phone__number, & span.mail__address{
+                text-align: center;
+                color: white;
+            }
+
+            & span.phone__number, & span.mail__address {
+                margin-top: 10%;
+            }
+        }
+    }
+}
