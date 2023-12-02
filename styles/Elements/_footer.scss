@@ -1,0 +1,75 @@
+.footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+
+    &__section{
+        width: 100%;
+        display: flex;
+        &--first{
+            height: 88%;
+            justify-content: center;
+            gap: 5%;
+
+            & .section__links, & .section__schedule, & .section__contact{
+                width: 25%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 2%;
+
+                & h2{
+                    width: 100%;
+                    height: 10%;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    margin-left: 10%;
+                    margin-top: 10%;
+                }
+
+                & span{
+                    margin-left: 10%;
+                    & a{
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &:first-of-type{
+                        margin-top: 3%;
+                    }
+
+                    &.contact__phone{
+                        margin-top: 8%;
+                    
+                    }
+                }
+                
+
+            }
+        }
+
+        &--second{
+            height: 12%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & .section__rights{
+                margin-left: 10%;
+                font-size: 0.8rem;
+            }
+
+            & .section__media-logos{
+                width: 14%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 8%;
+                & span{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

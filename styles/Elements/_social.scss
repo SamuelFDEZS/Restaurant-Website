@@ -1,0 +1,101 @@
+.social{
+    width: 100%;
+    height: 30vh;
+    &__title {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        font-size: 1.4rem;
+        font-weight: 700;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 30%;
+            width: 15%;
+            border: 1px solid rgb(187, 143, 10);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 30%;
+            width: 15%;
+            border: 1px solid rgb(187, 143, 10);
+        }
+    }
+
+    &__apps{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+
+        & .apps__facebook, & .apps__instagram{
+            width: 15%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            background: transparent;
+            position: relative;
+            transition: all 0.5s;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                color: white;
+            }
+
+            &::before{
+                content: "";
+                width: 0;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                transition: all 0.5s;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        & .apps__facebook::before{
+            background: linear-gradient(45deg, #627cb6, #3b5998, #192f6a);
+        }
+
+        & .apps__facebook:hover{
+            border: 2px solid #88aeff;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        & .apps__instagram::before{
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fec051);
+        }
+        & .apps__instagram:hover{
+            border: 2px solid #ff8b8b;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
