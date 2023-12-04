@@ -5,7 +5,17 @@
     flex-direction: column;
     align-items: center;
     gap: 1%;
+
     &__title {
+
+        @include breakpoint(xs) {
+            font-size: 1.8rem;
+        }
+
+        @include breakpoint(xxs) {
+            font-size: 1.6rem;
+        }
+
         width: 100%;
         height: 2%;
         display: flex;
@@ -16,6 +26,27 @@
         position: relative;
 
         &::before {
+
+            @include breakpoint(md) {
+                width: 17%;
+                left: 23%;
+            }
+
+            @include breakpoint(sm) {
+                width: 17%;
+                left: 23%;
+            }
+
+            @include breakpoint(xs) {
+                width: 15%;
+                left: 21%;
+            }
+
+            @include breakpoint(xxs) {
+                width: 12%;
+                left: 18%;
+            }
+
             content: '';
             position: absolute;
             width: 20%;
@@ -24,6 +55,26 @@
         }
 
         &::after {
+            @include breakpoint(md) {
+                width: 17%;
+                right: 23%;
+            }
+
+            @include breakpoint(sm) {
+                width: 17%;
+                right: 23%;
+            }
+
+            @include breakpoint(xs) {
+                width: 15%;
+                right: 21%;
+            }
+
+            @include breakpoint(xxs) {
+                width: 12%;
+                right: 18%;
+            }
+
             content: '';
             position: absolute;
             width: 20%;
@@ -41,9 +92,7 @@
 
         & .meals__underline {
             position: absolute;
-            left: 24%;
             top: 60%;
-            width: 12%;
             border-bottom: 3px solid rgb(161, 176, 5);
             transition: all 0.3s ease;
         }
@@ -57,6 +106,14 @@
             gap: 10%;
 
             & .options__option {
+                @include breakpoint(xs) {
+                    font-size: 1.3rem;
+                }
+
+                @include breakpoint(xxs) {
+                    font-size: 1.1rem;
+                }
+
                 font-size: 1.5em;
                 transition: 0.3s;
 
@@ -70,6 +127,23 @@
     }
 
     &__sliders {
+
+        @include breakpoint(sm) {
+            width: 100%;
+        }
+
+        @include breakpoint(xs) {
+            width: 100%;
+            height: 90%;
+        }
+
+        @include breakpoint(xxs) {
+            width: 100%;
+            height: 90%;
+        }
+
+        
+
         width: 85%;
         height: 80%;
         position: relative;
@@ -83,6 +157,29 @@
         background-position: center;
 
         & .sliders__breakfast {
+
+            @include breakpoint(md) {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include breakpoint(sm) {
+                width: 100%;
+                height: 100%;
+            }
+
+            @include breakpoint(xs) {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+
+            @include breakpoint(xxs) {
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+            }
+
             width: 90%;
             height: 90%;
             display: flex;
@@ -93,15 +190,48 @@
 
 
             & .breakfast__part1 {
+
+                @include breakpoint(sm) {
+                    height: 80%;
+                }
+
+                @include breakpoint(xs) {
+                    width: 90%;
+                    height: 75%;
+                }
+
+                @include breakpoint(xxs) {
+                    width: 90%;
+                    height: 75%;
+                    overflow-y: scroll;
+                }
+
+                
+
                 width: 40%;
                 height: 90%;
                 display: flex;
                 box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
-                padding: 0 10px 0 10px;
+                padding: 0 5px 0 5px;
                 background-color: white;
             }
 
             & .breakfast__part2 {
+
+                @include breakpoint(xs) {
+                    width: 90%;
+                    height: 75%;
+                    margin-top: 0;
+                }
+
+                @include breakpoint(xxs) {
+                    width: 90%;
+                    height: 95%;
+                    margin-top: 0;
+                    overflow-y: scroll;
+                    gap: 8%;
+                }
+
                 width: 40%;
                 height: 95%;
                 margin-top: 8.5%;
@@ -110,7 +240,6 @@
                 box-shadow: 14px 18px 17px 4px rgba(0, 0, 0, 0.1);
                 padding: 0 10px 15px 10px;
                 background-color: white;
-
                 & .part2__salty {
                     width: 100%;
                     height: 60%;
@@ -120,6 +249,7 @@
                     gap: 1%;
 
                     & .breakfast__title {
+                        
                         margin-top: 5%;
 
                         &--baguette {
@@ -130,6 +260,9 @@
                 }
 
                 & .part2__drinks {
+
+                    
+
                     width: 100%;
                     height: 40%;
                     margin-top: 5%;
@@ -157,6 +290,19 @@
             left: 200%;
 
             & .lunch__menu {
+
+                @include breakpoint(md){
+                    width: 75%;
+                }
+
+                @include breakpoint(xs){
+                    width: 75%;
+                }
+
+                @include breakpoint(xxs){
+                    width: 95%;
+                }
+
                 width: 60%;
                 height: 95%;
                 padding: 25px 10px 25px 10px;
@@ -180,6 +326,19 @@
         }
 
         & .sliders__cocktails {
+
+            @include breakpoint(md){
+                width: 75%;
+            }
+
+            @include breakpoint(xs){
+                width: 75%;
+            }
+
+            @include breakpoint(xxs){
+                width: 95%;
+            }
+            
             width: 40%;
             height: 70%;
             display: flex;
@@ -189,8 +348,10 @@
             left: 200%;
 
             & .cocktails__menu {
+
+                
                 width: 80%;
-                height: 70%;
+                height: 95%;
                 margin-top: 0;
                 display: flex;
 
@@ -228,11 +389,23 @@
 
 
         & .menu__table {
+
+            @include breakpoint(xxs) {
+                margin-top: 10%;
+            }
+
             width: 80%;
             height: 90%;
             margin-left: 10%;
 
+            &:first-of-type {
+                margin-top: 10%;
+            }
+
             & tr {
+                @include breakpoint(xs){
+                    height: 30px;
+                }
                 height: 55px;
             }
 

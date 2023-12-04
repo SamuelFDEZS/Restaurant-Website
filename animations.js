@@ -1,8 +1,9 @@
 let menuOptions = Array.from(document.querySelectorAll(".options__option"));
 let underline = document.querySelector(".meals__underline");
 let sliders = Array.from(document.querySelectorAll(".menu__sliders article"));
+let optionSelected = document.querySelector(".options__option--selected");
 
-
+// GSAP
 
 const showMeals = (meal) => {
     const selectedSlider = document.querySelector(`.sliders__${meal}`)
@@ -33,6 +34,8 @@ const showMeals = (meal) => {
 }
 
 
+underline.style.left = `${optionSelected.offsetLeft}px`;
+underline.style.width = `${optionSelected.offsetWidth}px`;
 
 
 
