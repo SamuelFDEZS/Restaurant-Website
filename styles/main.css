@@ -1206,17 +1206,83 @@ body {
   position: relative;
   z-index: 2;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__title {
+    font-size: 1.6rem;
+  }
+}
 .reservations__box .box__title::before {
   content: "";
   left: 20%;
   width: 20%;
   border: 1px solid rgb(187, 143, 10);
 }
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .reservations__box .box__title::before {
+    width: 17%;
+    left: 18%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .reservations__box .box__title::before {
+    width: 17%;
+    left: 15%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__title::before {
+    width: 15%;
+    left: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__title::before {
+    width: 12%;
+    left: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .reservations__box .box__title::after {
   content: "";
   right: 20%;
   width: 20%;
   border: 1px solid rgb(187, 143, 10);
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .reservations__box .box__title::after {
+    width: 17%;
+    right: 18%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .reservations__box .box__title::after {
+    width: 17%;
+    right: 15%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__title::after {
+    width: 15%;
+    visibility: visible;
+    opacity: 1;
+    right: 12%;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__title::after {
+    width: 12%;
+    right: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .reservations__box .box__container {
   position: relative;
@@ -1354,17 +1420,34 @@ body {
   margin-top: 0;
   margin-left: 9%;
 }
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__form .form__container--buttons .form__button--waiter {
+    width: 80%;
+    height: 32%;
+  }
+}
 .reservations__box .box__container .container__form .form__container--buttons .container__warning {
   color: white;
   font-weight: 600;
   align-self: flex-start;
   margin-left: 9%;
 }
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__form .form__container--buttons .container__warning {
+    font-size: 0.8rem;
+  }
+}
 .reservations__box .box__container .container__form .form__container--buttons .form__button--request {
   width: 76%;
   height: 25%;
   margin-top: 0;
   margin-left: 9%;
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__form .form__container--buttons .form__button--request {
+    width: 80%;
+    height: 32%;
+  }
 }
 .reservations__box .box__container .container__form .form__container--buttons .form__button--request:hover {
   cursor: pointer;
@@ -1385,6 +1468,21 @@ body {
   font-size: 2rem;
   font-weight: 700;
 }
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .reservations__box .box__container .container__resInfo .resInfo__title1 {
+    font-size: 1.7rem;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__container .container__resInfo .resInfo__title1 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__resInfo .resInfo__title1 {
+    font-size: 1rem;
+  }
+}
 .reservations__box .box__container .container__resInfo .resInfo__title2 {
   width: 100%;
   height: 10%;
@@ -1393,15 +1491,59 @@ body {
   font-weight: 700;
   word-spacing: 10px;
 }
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .reservations__box .box__container .container__resInfo .resInfo__title2 {
+    font-size: 1.3rem;
+    word-spacing: 7px;
+    white-space: nowrap;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__container .container__resInfo .resInfo__title2 {
+    font-size: 0.8rem;
+    word-spacing: 3px;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__resInfo .resInfo__title2 {
+    font-size: 0.6rem;
+    word-spacing: 3px;
+    white-space: nowrap;
+  }
+}
 .reservations__box .box__container .container__resInfo .resInfo__hline {
   width: 20%;
   height: 0;
   border-top: 1px solid white;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__container .container__resInfo .resInfo__hline {
+    width: 100%;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__resInfo .resInfo__hline {
+    width: 100%;
+  }
+}
 .reservations__box .box__container .container__resInfo span {
   color: white;
   font-size: 1.05rem;
   margin-top: 1%;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .reservations__box .box__container .container__resInfo span {
+    text-align: center;
+    margin-top: 8%;
+  }
+}
+@media (max-width: 400.98px) {
+  .reservations__box .box__container .container__resInfo span {
+    text-align: center;
+    margin-top: 8%;
+    font-size: 0.8rem;
+  }
 }
 .reservations__box .box__container .container__resInfo span:first-of-type {
   margin-top: 7%;
@@ -1415,6 +1557,20 @@ body {
   justify-content: center;
   gap: 5%;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog {
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog {
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+  }
+}
 .blog__title {
   width: 100%;
   height: 10%;
@@ -1426,12 +1582,50 @@ body {
   font-weight: 700;
   position: relative;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog__title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog__title {
+    font-size: 1.6rem;
+  }
+}
 .blog__title::before {
   content: "";
   position: absolute;
   left: 30%;
   width: 15%;
   border: 1px solid rgb(187, 143, 10);
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog__title::before {
+    width: 17%;
+    left: 23%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog__title::before {
+    width: 17%;
+    left: 20%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog__title::before {
+    width: 15%;
+    left: 17%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog__title::before {
+    width: 12%;
+    left: 17%;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .blog__title::after {
   content: "";
@@ -1440,6 +1634,34 @@ body {
   width: 15%;
   border: 1px solid rgb(187, 143, 10);
 }
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog__title::after {
+    width: 17%;
+    right: 23%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog__title::after {
+    width: 17%;
+    right: 20%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog__title::after {
+    width: 15%;
+    visibility: visible;
+    opacity: 1;
+    right: 17%;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog__title::after {
+    width: 12%;
+    right: 17%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .blog a {
   width: 24%;
   height: 65%;
@@ -1447,6 +1669,18 @@ body {
   text-decoration: none;
   color: black;
   transition: all 0.5s;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a {
+    width: 60%;
+    height: 20%;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a {
+    width: 60%;
+    height: 20%;
+  }
 }
 .blog a .link__article {
   width: 100%;
@@ -1457,7 +1691,7 @@ body {
   transition: all 0.5s;
 }
 .blog a .link__article .article__res-name {
-  width: 30%;
+  width: 45%;
   height: 5%;
   border: 2px solid white;
   color: white;
@@ -1466,23 +1700,110 @@ body {
   left: 3%;
   top: 2%;
   text-align: center;
+  white-space: nowrap;
   transition: all 0.5s;
 }
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog a .link__article .article__res-name {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__res-name {
+    width: 55%;
+    font-size: 0.7rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__res-name {
+    width: 30%;
+    height: 7%;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__res-name {
+    width: 30%;
+    height: 7%;
+    font-size: 0.6rem;
+  }
+}
 .blog a .link__article .article__information {
-  width: 55%;
+  width: 64%;
   height: 60%;
   color: white;
   z-index: 2;
-  align-self: center;
   margin-top: 25%;
-  margin-right: 20%;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   transition: all 0.5s;
 }
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .blog a .link__article .article__information {
+    width: 70%;
+  }
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog a .link__article .article__information {
+    width: 76%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__information {
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 50%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__information {
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
+    align-self: flex-end;
+    margin-left: 0;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__information {
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
+    align-self: flex-end;
+    margin-left: 0;
+  }
+}
 .blog a .link__article .article__information .information__date {
   color: rgb(199, 199, 199);
   transition: all 0.5s;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__information .information__date {
+    text-align: center;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__information .information__date {
+    font-size: 0.7rem;
+    align-self: center;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__information .information__date {
+    font-size: 0.7rem;
+    align-self: center;
+  }
 }
 .blog a .link__article .article__information .information__title {
   width: 100%;
@@ -1492,6 +1813,29 @@ body {
   padding: 5px;
   transition: all 0.5s;
 }
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog a .link__article .article__information .information__title {
+    font-size: 1.4rem;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__information .information__title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__information .information__title {
+    font-size: 1rem;
+    text-align: right;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__information .information__title {
+    font-size: 1rem;
+    text-align: right;
+  }
+}
 .blog a .link__article .article__information .information__description {
   width: 90%;
   color: rgba(255, 255, 255, 0.671);
@@ -1499,11 +1843,34 @@ body {
   margin-top: 8%;
   transition: all 0.5s;
 }
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__information .information__description {
+    text-align: center;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__information .information__description {
+    text-align: right;
+    width: 80%;
+    font-size: 0.7rem;
+    margin-top: 2%;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__information .information__description {
+    text-align: right;
+    width: 80%;
+    font-size: 0.7rem;
+    margin-top: 2%;
+    align-self: flex-end;
+  }
+}
 .blog a .link__article .article__hline {
   width: 100%;
-  margin-top: 15%;
-  position: relative;
+  position: absolute;
   z-index: 2;
+  bottom: 5%;
   border-top: 1px solid rgb(186, 186, 186);
   transition: all 0.5s;
 }
@@ -1513,10 +1880,26 @@ body {
   display: flex;
   align-items: center;
   gap: 3%;
-  position: relative;
+  position: absolute;
   z-index: 2;
+  bottom: 0;
   color: rgba(255, 255, 255, 0.671);
   transition: all 0.5s;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a .link__article .article__icons {
+    font-size: 0.8rem;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a .link__article .article__icons {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a .link__article .article__icons {
+    font-size: 0.7rem;
+  }
 }
 .blog a .link__article .article__icons span:nth-child(1) {
   margin-left: 5%;
@@ -1555,13 +1938,48 @@ body {
   color: black;
   border: 2px solid black;
 }
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a:hover .article__information {
+    background: rgba(255, 255, 255, 0.847);
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a:hover .article__information {
+    background: rgba(255, 255, 255, 0.847);
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a:hover .article__information {
+    background: rgba(255, 255, 255, 0.847);
+  }
+}
 .blog a:hover .article__information .information__title {
   color: black;
-  background: rgba(255, 255, 255, 0.684);
+  background: rgba(255, 255, 255, 0.847);
   border-radius: 5px;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a:hover .article__information .information__title {
+    background: transparent;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a:hover .article__information .information__title {
+    background: transparent;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a:hover .article__information .information__title {
+    background: transparent;
+  }
 }
 .blog a:hover .article__information .information__description {
   color: white;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a:hover .article__information .information__description {
+    color: black;
+  }
 }
 .blog a:hover .article__hline {
   border-top: 1px solid white;
@@ -1585,7 +2003,23 @@ body {
   transition: all 0.5s;
 }
 .blog a.second__link .link__article .article__information, .blog a.third__link .link__article .article__information {
-  width: 40%;
+  width: 50%;
+}
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .blog a.second__link .link__article .article__information, .blog a.third__link .link__article .article__information {
+    width: 60%;
+  }
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .blog a.second__link .link__article .article__information, .blog a.third__link .link__article .article__information {
+    width: 70%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a.second__link .link__article .article__information, .blog a.third__link .link__article .article__information {
+    width: 70%;
+    margin-top: 30%;
+  }
 }
 .blog a.second__link:hover .article__background, .blog a.third__link:hover .article__background {
   filter: brightness(100%) contrast(100%);
@@ -1596,8 +2030,23 @@ body {
 }
 .blog a.second__link:hover .article__information .information__title, .blog a.third__link:hover .article__information .information__title {
   color: black;
-  background: rgba(255, 255, 255, 0.684);
+  background: rgba(255, 255, 255, 0.847);
   border-radius: 5px;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .blog a.second__link:hover .article__information .information__title, .blog a.third__link:hover .article__information .information__title {
+    background: transparent;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog a.second__link:hover .article__information .information__title, .blog a.third__link:hover .article__information .information__title {
+    background: transparent;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog a.second__link:hover .article__information .information__title, .blog a.third__link:hover .article__information .information__title {
+    background: transparent;
+  }
 }
 .blog a.third__link .link__article .article__background {
   background-image: url("https://www.coffeeandbrunchbcn.es/wp-content/uploads/2015/12/S%C3%B3lo-para-ti.jpg");
@@ -1622,6 +2071,20 @@ body {
   background: linear-gradient(to right, #dbb134, #bd8e0e);
   background-size: 200% 100%;
   transition: all 0.5s;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .blog__items {
+    width: 30%;
+    height: 5%;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .blog__items {
+    width: 30%;
+    height: 3%;
+    font-size: 0.7rem;
+  }
 }
 .blog__items:hover {
   background-position: -200% 0;
