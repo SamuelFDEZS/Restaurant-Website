@@ -2486,6 +2486,21 @@ body {
   justify-content: center;
   gap: 5%;
 }
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .footer__section--first {
+    gap: 10%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .footer__section--first {
+    gap: 15%;
+  }
+}
+@media (max-width: 400.98px) {
+  .footer__section--first {
+    gap: 15%;
+  }
+}
 .footer__section--first .section__links, .footer__section--first .section__schedule, .footer__section--first .section__contact {
   width: 25%;
   height: 100%;
@@ -2500,9 +2515,41 @@ body {
   font-weight: 700;
   margin-left: 10%;
   margin-top: 10%;
+  white-space: nowrap;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .footer__section--first .section__links h2, .footer__section--first .section__schedule h2, .footer__section--first .section__contact h2 {
+    font-size: 1.5rem;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .footer__section--first .section__links h2, .footer__section--first .section__schedule h2, .footer__section--first .section__contact h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .footer__section--first .section__links h2, .footer__section--first .section__schedule h2, .footer__section--first .section__contact h2 {
+    font-size: 1.1rem;
+    white-space: wrap;
+  }
 }
 .footer__section--first .section__links span, .footer__section--first .section__schedule span, .footer__section--first .section__contact span {
   margin-left: 10%;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .footer__section--first .section__links span, .footer__section--first .section__schedule span, .footer__section--first .section__contact span {
+    font-size: 0.8rem;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .footer__section--first .section__links span, .footer__section--first .section__schedule span, .footer__section--first .section__contact span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .footer__section--first .section__links span, .footer__section--first .section__schedule span, .footer__section--first .section__contact span {
+    font-size: 0.6rem;
+  }
 }
 .footer__section--first .section__links span a, .footer__section--first .section__schedule span a, .footer__section--first .section__contact span a {
   text-decoration: none;
@@ -2514,6 +2561,9 @@ body {
 .footer__section--first .section__links span.contact__phone, .footer__section--first .section__schedule span.contact__phone, .footer__section--first .section__contact span.contact__phone {
   margin-top: 8%;
 }
+.footer__section--first .section__links span:first-of-type {
+  margin-top: 40%;
+}
 .footer__section--second {
   height: 12%;
   display: flex;
@@ -2524,6 +2574,11 @@ body {
   margin-left: 10%;
   font-size: 0.8rem;
 }
+@media (max-width: 400.98px) {
+  .footer__section--second .section__rights {
+    font-size: 0.6rem;
+  }
+}
 .footer__section--second .section__media-logos {
   width: 14%;
   height: 100%;
@@ -2533,4 +2588,9 @@ body {
 }
 .footer__section--second .section__media-logos span {
   font-size: 1.4rem;
+}
+@media (max-width: 400.98px) {
+  .footer__section--second .section__media-logos span {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
