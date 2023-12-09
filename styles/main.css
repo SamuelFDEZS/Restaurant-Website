@@ -2117,8 +2117,8 @@ body {
   filter: brightness(30%) contrast(120%);
 }
 .contact__logo {
-  width: 10%;
-  height: 20%;
+  width: 13%;
+  height: 60%;
   background-image: url("https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -2126,6 +2126,46 @@ body {
   filter: invert(100%) hue-rotate(200deg);
   position: relative;
   z-index: 2;
+}
+@media ((min-width: 1200px) and (max-width: 1399.98px)) {
+  .contact__logo {
+    width: 18%;
+    height: 60%;
+  }
+}
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .contact__logo {
+    width: 20%;
+    height: 60%;
+  }
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .contact__logo {
+    width: 25%;
+    height: 30%;
+    background-size: contain;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .contact__logo {
+    width: 30%;
+    height: 35%;
+    background-size: contain;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .contact__logo {
+    width: 35%;
+    height: 33%;
+    background-size: contain;
+  }
+}
+@media (max-width: 400.98px) {
+  .contact__logo {
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+  }
 }
 .contact__text {
   width: 100%;
@@ -2141,15 +2181,27 @@ body {
   letter-spacing: 0.5rem;
   text-shadow: 0 0 1rem black;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .contact__text {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .contact__text {
+    font-size: 0.8rem;
+    line-height: 30px;
+  }
+}
 .contact__box {
   width: 100%;
-  height: 30%;
+  height: 40%;
   position: relative;
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10%;
+  margin-bottom: 5%;
 }
 .contact__box article {
   width: 14%;
@@ -2159,8 +2211,28 @@ body {
   align-items: center;
   gap: 5%;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .contact__box article {
+    width: 20%;
+  }
+}
+@media (max-width: 400.98px) {
+  .contact__box article {
+    width: 25%;
+  }
+}
 .contact__box article .fa-map {
   font-size: 2.3rem;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .contact__box article .fa-map {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .contact__box article .fa-map {
+    font-size: 1.6rem;
+  }
 }
 .contact__box article .fa-mobile-screen {
   font-size: 2.3rem;
@@ -2171,6 +2243,16 @@ body {
 .contact__box article span.location__street, .contact__box article span.location__postal, .contact__box article span.phone__number, .contact__box article span.mail__address {
   text-align: center;
   color: white;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .contact__box article span.location__street, .contact__box article span.location__postal, .contact__box article span.phone__number, .contact__box article span.mail__address {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .contact__box article span.location__street, .contact__box article span.location__postal, .contact__box article span.phone__number, .contact__box article span.mail__address {
+    font-size: 0.6rem;
+  }
 }
 .contact__box article span.phone__number, .contact__box article span.mail__address {
   margin-top: 10%;

@@ -25,8 +25,40 @@
     }
 
     &__logo {
-        width: 10%;
-        height: 20%;
+
+        @include breakpoint(xl) {
+            width: 18%;
+            height: 60%;
+        }
+
+        @include breakpoint(lg) {
+            width: 20%;
+            height: 60%;
+        }
+
+        @include breakpoint(md) {
+            width: 25%;
+            height: 30%;
+            background-size: contain;
+        }
+        @include breakpoint(sm) {
+            width: 30%;
+            height: 35%;
+            background-size: contain;
+        }
+        @include breakpoint(xs) {
+            width: 35%;
+            height: 33%;
+            background-size: contain;
+        }
+        @include breakpoint(xxs) {
+            width: 50%;
+            height: 50%;
+            background-size: contain;
+        }
+
+        width: 13%;
+        height: 60%;
         background-image: url("https://gastrocolegas.com/wp-content/uploads/2017/01/Mozza-Bar-Logo.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -37,6 +69,16 @@
     }
 
     &__text {
+
+        @include breakpoint(xs) {
+            font-size: 0.8rem;
+        }
+
+        @include breakpoint(xxs) {
+            font-size: 0.8rem;
+            line-height: 30px;
+        }
+
         width: 100%;
         height: 20%;
         position: relative;
@@ -53,24 +95,40 @@
 
     &__box {
         width: 100%;
-        height: 30%;
+        height: 40%;
         position: relative;
         z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10%;
+        margin-bottom: 5%;
 
 
         & article {
+            @include breakpoint(xs) {
+                width: 20%;
+            }
+
+            @include breakpoint(xxs) {
+                width: 25%;
+            }
+            
             width: 14%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 5%;
-
             & .fa-map {
+                @include breakpoint(xs) {
+                    font-size: 1.8rem;
+                }
+
+                @include breakpoint(xxs) {
+                    font-size: 1.6rem;
+                }
+
                 font-size: 2.3rem;
 
             }
@@ -84,6 +142,13 @@
             }
 
             & span.location__street, & span.location__postal, & span.phone__number, & span.mail__address{
+                @include breakpoint(xs) {
+                    font-size: 0.8rem;
+                }
+
+                @include breakpoint(xxs) {
+                    font-size: 0.6rem;
+                }
                 text-align: center;
                 color: white;
             }
