@@ -2273,12 +2273,62 @@ body {
   font-weight: 700;
   position: relative;
 }
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .social__title {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 400.98px) {
+  .social__title {
+    font-size: 1rem;
+  }
+}
 .social__title::before {
   content: "";
   position: absolute;
   left: 30%;
   width: 15%;
   border: 1px solid rgb(187, 143, 10);
+}
+@media ((min-width: 1200px) and (max-width: 1399.98px)) {
+  .social__title::before {
+    width: 15%;
+    left: 25%;
+  }
+}
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .social__title::before {
+    width: 15%;
+    left: 25%;
+  }
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .social__title::before {
+    width: 17%;
+    left: 18%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .social__title::before {
+    width: 17%;
+    left: 15%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .social__title::before {
+    width: 15%;
+    left: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 400.98px) {
+  .social__title::before {
+    width: 12%;
+    left: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .social__title::after {
   content: "";
@@ -2287,6 +2337,46 @@ body {
   width: 15%;
   border: 1px solid rgb(187, 143, 10);
 }
+@media ((min-width: 1200px) and (max-width: 1399.98px)) {
+  .social__title::after {
+    width: 15%;
+    right: 25%;
+  }
+}
+@media ((min-width: 992px) and (max-width: 1199.98px)) {
+  .social__title::after {
+    width: 15%;
+    right: 25%;
+  }
+}
+@media ((min-width: 768px) and (max-width: 991.98px)) {
+  .social__title::after {
+    width: 17%;
+    right: 18%;
+  }
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .social__title::after {
+    width: 17%;
+    right: 15%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .social__title::after {
+    width: 15%;
+    visibility: visible;
+    opacity: 1;
+    right: 12%;
+  }
+}
+@media (max-width: 400.98px) {
+  .social__title::after {
+    width: 12%;
+    right: 12%;
+    visibility: visible;
+    opacity: 1;
+  }
+}
 .social__apps {
   width: 100%;
   height: 90%;
@@ -2294,6 +2384,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5%;
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .social__apps {
+    gap: 10%;
+  }
+}
+@media (max-width: 400.98px) {
+  .social__apps {
+    gap: 15%;
+  }
 }
 .social__apps .apps__facebook, .social__apps .apps__instagram {
   width: 15%;
@@ -2305,6 +2405,25 @@ body {
   background: transparent;
   position: relative;
   transition: all 0.5s;
+}
+@media ((min-width: 576px) and (max-width: 767.98px)) {
+  .social__apps .apps__facebook, .social__apps .apps__instagram {
+    width: 20%;
+  }
+}
+@media ((min-width: 401px) and (max-width: 575.98px)) {
+  .social__apps .apps__facebook, .social__apps .apps__instagram {
+    width: 23%;
+    height: 25%;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 400.98px) {
+  .social__apps .apps__facebook, .social__apps .apps__instagram {
+    width: 35%;
+    height: 26%;
+    font-size: 1.1em;
+  }
 }
 .social__apps .apps__facebook:hover, .social__apps .apps__instagram:hover {
   cursor: pointer;
