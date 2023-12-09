@@ -2561,8 +2561,10 @@ body {
 .footer__section--first .section__links span.contact__phone, .footer__section--first .section__schedule span.contact__phone, .footer__section--first .section__contact span.contact__phone {
   margin-top: 8%;
 }
-.footer__section--first .section__links span:first-of-type {
-  margin-top: 40%;
+@media (max-width: 400.98px) {
+  .footer__section--first .section__links span:first-of-type {
+    margin-top: 40%;
+  }
 }
 .footer__section--second {
   height: 12%;

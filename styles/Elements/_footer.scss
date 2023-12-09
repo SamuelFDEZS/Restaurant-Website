@@ -87,7 +87,9 @@
 
             & .section__links{
                 & span:first-of-type{
-                    margin-top: 40%;
+                    @include breakpoint(xxs) {
+                        margin-top: 40%;
+                    }
                 }
             }
         }
